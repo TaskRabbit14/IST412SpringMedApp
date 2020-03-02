@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import Tests.Test;
+import Tests.kelliaTest;
 
 /**
  *
@@ -23,6 +24,9 @@ public class IST412 extends Application {
         stage.show();
         Test test= new Test();
         test.testAll();
+        kelliaTest test2 = new kelliaTest();
+        test2.testAll();
+        
     }
 
     /**

@@ -7,7 +7,7 @@ public class Prescription {
     protected ArrayList<String> medicine;
     protected ArrayList<String> dosage;
     protected String doctorID;
-    protected String patientId;
+    protected String patientID;
     protected String prescriptionID;
     protected String doctorNotes;
 
@@ -17,7 +17,7 @@ public class Prescription {
      * @param medicine sets the medication name of the prescription
      * @param dosage sets the dosage of the medication
      * @param doctorID sets the ID of the doctor that prescribed the medication
-     * @param patientId sets the ID of the patient receiving the medication
+     * @param patientID sets the ID of the patient receiving the medication
      * @param prescriptionID sets the ID of the prescription
      * @param doctorNotes sets the notes recorded by the doctor when giving the prescription
      */
@@ -27,7 +27,7 @@ public class Prescription {
         this.medicine = medicine;
         this.dosage = dosage;
         this.doctorID = doctorID;
-        this.patientId = patientId;
+        this.patientID = patientId;
         this.prescriptionID = prescriptionID;
         this.doctorNotes = doctorNotes;
     }
@@ -91,15 +91,15 @@ public class Prescription {
     /**
      * @return the patientId
      */
-    public String getPatientId() {
-        return patientId;
+    public String getPatientID() {
+        return patientID;
     }
 
     /**
-     * @param patientId the patientId to set
+     * @param patientID the patientId to set
      */
-    public void setPatientId(String patientId) {
-        this.patientId = patientId;
+    public void setPatientID(String patientID) {
+        this.patientID = patientID;
     }
 
     /**
