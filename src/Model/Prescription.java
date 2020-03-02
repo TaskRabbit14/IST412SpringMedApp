@@ -22,12 +22,12 @@ public class Prescription {
      * @param doctorNotes sets the notes recorded by the doctor when giving the prescription
      */
     
-    public Prescription(String prescriptionDate, ArrayList<String> medicine, ArrayList<String> dosage, String doctorID, String patientId, String prescriptionID, String doctorNotes) {
+    public Prescription(String prescriptionDate, ArrayList<String> medicine, ArrayList<String> dosage, String doctorID, String patientID, String prescriptionID, String doctorNotes) {
         this.prescriptionDate = prescriptionDate;
         this.medicine = medicine;
         this.dosage = dosage;
         this.doctorID = doctorID;
-        this.patientID = patientId;
+        this.patientID = patientID;
         this.prescriptionID = prescriptionID;
         this.doctorNotes = doctorNotes;
     }
