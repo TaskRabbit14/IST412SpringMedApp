@@ -10,7 +10,9 @@ import javafx.fxml.Initializable;
  * @author Angel Wu
  */
 public class DoctorHomeUIController implements Initializable {
-
+    private Button viewPatientRecords;
+    private Button updatePatientRecords;
+    
     /**
      * Initializes the controller class.
      */
