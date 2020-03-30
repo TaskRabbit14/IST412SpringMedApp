@@ -14,20 +14,20 @@ import Tests.kelliaTest;
  */
 public class IST412 extends Application {
     
-    @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
+   @Override
+    public void start(Stage stage) throws Exception 
+    {
+        Parent root = FXMLLoader.load(getClass().getResource("LoginUI.fxml"));
         Scene scene = new Scene(root);
-        
+        stage.setTitle("Please Login");
         stage.setScene(scene);
         stage.show();
-        Test test= new Test();
-        test.testAll();
-        kelliaTest test2 = new kelliaTest();
-        test2.testAll();
-        
     }
+    
+    //Test test= new Test();
+//        test.testAll();
+//        kelliaTest test2 = new kelliaTest();
+//        test2.testAll();
 
     /**
      * @param args the command line arguments
