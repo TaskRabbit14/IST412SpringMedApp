@@ -2,6 +2,7 @@ package Controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -15,9 +16,12 @@ import javafx.stage.Stage;
  * @author Angel Wu
  */
 public class DoctorHomeUIController implements Initializable {
-
-    private Button viewPatientRecords;
-    private Button updatePatientRecords;
+    @FXML
+    private Button homeNav;
+    @FXML
+    private Button prescriptionNav;
+    @FXML
+    private Button recordNav;
     /**
      * Initializes the controller class.
      */
@@ -68,5 +72,20 @@ public class DoctorHomeUIController implements Initializable {
      */
     public void toAccessPrescriptionUI(){
     
+    }
+    
+    public void home(){
+        DoctorHomeUIController newController = new DoctorHomeUIController();
+        newController.setStage((Stage)homeNav.getScene().getWindow());
+    }
+    
+    public void record(){
+        DoctorAccessRecordsUIController newController = new DoctorAccessRecordsUIController();
+        newController.setStage((Stage)homeNav.getScene().getWindow());
+    }
+    
+    public void prescription(){
+        AccessPrescriptionUIController newController = new AccessPrescriptionUIController();
+        newController.setStage((Stage)homeNav.getScene().getWindow());
     }
 }
