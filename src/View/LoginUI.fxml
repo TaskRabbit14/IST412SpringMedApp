@@ -7,14 +7,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="589.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.LoginUIController">
+<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginUIController">
    <children>
       <AnchorPane layoutX="20.0" layoutY="27.0" prefHeight="280.0" prefWidth="552.0">
          <children>
-            <Button layoutX="33.0" layoutY="82.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="125.0" text="Medical Personell" />
-            <Button layoutX="243.0" layoutY="82.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="87.0" text="Patient" />
-            <Button layoutX="427.0" layoutY="81.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="87.0" text="Pharmacy" />
             <Label layoutX="115.0" layoutY="141.0" prefHeight="39.0" prefWidth="87.0" text="Login ID:">
                <font>
                   <Font size="22.0" />
@@ -25,13 +21,14 @@
                   <Font size="22.0" />
                </font>
             </Label>
-            <PasswordField layoutX="223.0" layoutY="201.0" />
-            <TextField layoutX="223.0" layoutY="147.0" />
-            <Label layoutX="170.0" layoutY="14.0" prefHeight="39.0" prefWidth="234.0" text="Medical Records Retreival" textAlignment="CENTER">
+            <PasswordField fx:id="password" layoutX="223.0" layoutY="201.0" />
+            <TextField fx:id="logInID" layoutX="223.0" layoutY="147.0" />
+            <Label layoutX="159.0" layoutY="53.0" prefHeight="39.0" prefWidth="234.0" text="Medical Records Retreival" textAlignment="CENTER">
                <font>
                   <Font size="21.0" />
                </font>
             </Label>
+            <Button fx:id="goButton" layoutX="468.0" layoutY="234.0" mnemonicParsing="false" onAction="#goPressed" text="GO" />
          </children>
       </AnchorPane>
    </children>
