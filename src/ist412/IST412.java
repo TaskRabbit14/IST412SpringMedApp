@@ -17,7 +17,7 @@ public class IST412 extends Application {
    @Override
     public void start(Stage stage) throws Exception 
     {
-        Parent root = FXMLLoader.load(getClass().getResource("LoginUI.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../View/LoginUI.fxml"));
         Scene scene = new Scene(root);
         stage.setTitle("Please Login");
         stage.setScene(scene);
