@@ -2,7 +2,12 @@ package Controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -10,12 +15,28 @@ import javafx.fxml.Initializable;
  * @author Angel Wu
  */
 public class DoctorHomeUIController implements Initializable {
+
     private Button viewPatientRecords;
     private Button updatePatientRecords;
-    
     /**
      * Initializes the controller class.
      */
+    public void setStage(Stage stage) 
+    {
+        try
+        {
+        Parent root = FXMLLoader.load(getClass().getResource("DoctorHomeUI.fxml"));
+        Scene scene = new Scene(root);
+        stage.setTitle("Medical Personell Homescreen");
+        stage.setScene(scene);
+        stage.show();
+        }
+        catch(Exception e)
+                {
+                    e.printStackTrace();
+                     System.out.println("Error cannot open Doctor Home UI");
+                } 
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
