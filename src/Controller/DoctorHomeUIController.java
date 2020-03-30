@@ -25,7 +25,7 @@ public class DoctorHomeUIController implements Initializable {
     {
         try
         {
-        Parent root = FXMLLoader.load(getClass().getResource("DoctorHomeUI.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../View/DoctorHomeUI.fxml"));
         Scene scene = new Scene(root);
         stage.setTitle("Medical Personell Homescreen");
         stage.setScene(scene);
