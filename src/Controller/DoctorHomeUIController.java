@@ -81,7 +81,7 @@ public class DoctorHomeUIController implements Initializable {
     
     public void record(){
         DoctorAccessRecordsUIController newController = new DoctorAccessRecordsUIController();
-        newController.setStage((Stage)homeNav.getScene().getWindow());
+    newController.setStage((Stage)homeNav.getScene().getWindow());
     }
     
     public void prescription(){

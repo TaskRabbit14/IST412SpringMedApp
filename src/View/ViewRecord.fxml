@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewRecordsUIController">
+   <children>
+      <AnchorPane layoutX="186.0" layoutY="132.0" prefHeight="136.0" prefWidth="228.0" />
+      <Label fx:id="firstName" layoutX="22.0" layoutY="43.0" prefHeight="23.0" prefWidth="95.0" text="Label" />
+      <Label fx:id="lastName" layoutX="106.0" layoutY="43.0" prefHeight="23.0" prefWidth="85.0" text="Label" />
+   </children>
+</AnchorPane>
