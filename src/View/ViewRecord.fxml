@@ -13,5 +13,16 @@
       <AnchorPane layoutX="186.0" layoutY="132.0" prefHeight="136.0" prefWidth="228.0" />
       <Label fx:id="firstName" layoutX="22.0" layoutY="43.0" prefHeight="23.0" prefWidth="95.0" text="Label" />
       <Label fx:id="lastName" layoutX="106.0" layoutY="43.0" prefHeight="23.0" prefWidth="85.0" text="Label" />
+      <Label fx:id="birthDateLabel" layoutX="22.0" layoutY="60" prefHeight="23.0" prefWidth="85.0" text="Birth Date:" />
+      <Label fx:id="birthDate" layoutX="106.0" layoutY="60" prefHeight="23.0" prefWidth="85.0" text="Label" />
+      <Label fx:id="sexLabel" layoutX="22.0" layoutY="77" prefHeight="23.0" prefWidth="85.0" text="Sex:" />
+      <Label fx:id="sex" layoutX="106.0" layoutY="77" prefHeight="23.0" prefWidth="85.0" text="Label" />
+      <Label fx:id="bloodTypeLabel" layoutX="22.0" layoutY="94" prefHeight="23.0" prefWidth="85.0" text="Blood Type:" />
+      <Label fx:id="bloodType" layoutX="106.0" layoutY="94" prefHeight="23.0" prefWidth="85.0" text="Label" />
+      <Label fx:id="patientIDLabel" layoutX="22.0" layoutY="111" prefHeight="23.0" prefWidth="85.0" text="Patient ID:" />
+      <Label fx:id="patientID" layoutX="106.0" layoutY="111" prefHeight="23.0" prefWidth="85.0" text="Label" />
+      <Label fx:id="SSNLabel" layoutX="22.0" layoutY="128" prefHeight="23.0" prefWidth="85.0" text="SSN:" />
+      <Label fx:id="SSN" layoutX="106.0" layoutY="128" prefHeight="23.0" prefWidth="85.0" text="Label" />
+     
    </children>
 </AnchorPane>

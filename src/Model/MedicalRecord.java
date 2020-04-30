@@ -20,6 +20,15 @@ public class MedicalRecord {
      * @param filePath sets the path where the record file can be found
      */
     
+    public MedicalRecord() {
+        this.recordID = "";
+        this.recordName = "";
+        this.patientID = "";
+        this.privacyRating = 0;
+        this.fileCreated = new Date();
+        this.filePath = "";
+    }
+    
     public MedicalRecord(String recordID, String recordName, String patientID, int privacyRating, Date fileCreated, String filePath) {
         this.recordID = recordID;
         this.recordName = recordName;

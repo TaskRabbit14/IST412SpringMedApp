@@ -2,6 +2,7 @@ package Model;
 
 import java.util.ArrayList;
 import java.util.Date;
+import Model.MedicalRecord;
 
 public class Patient {
     protected String firstName;
@@ -42,6 +43,26 @@ public class Patient {
      * @param billingAddress sets the billing address of the Patient
      * @param prescriptions sets the array of prescriptions of the Patient
      */
+    
+    public Patient() {
+        this.firstName = "";
+        this.lastName = "";
+        this.birthDate = new Date();
+        this.sex = "";
+        this.bloodType = "";
+        this.patientID = "";
+        this.SSN = "";
+        this.patientInsuranceNumber = "";
+        this.creditCard = "";
+        this.emergencyContactNumber = "";
+        this.phoneNumber = "";
+        this.email = "";
+        this.Records = new ArrayList<MedicalRecord>();
+        this.relative = "";
+        this.address = "";
+        this.billingAddress = "";
+        this.prescriptions = new ArrayList<Prescription>();
+    }
     
     public Patient(String firstName, String lastName, Date birthDate, String sex, String bloodType, String patientID, String SSN, String patientInsuranceNumber, String creditCard, String emergencyContactNumber, String phoneNumber, String email, ArrayList<MedicalRecord> Records, String relative, String address, String billingAddress, ArrayList<Prescription> prescriptions) {
         this.firstName = firstName;
@@ -307,5 +328,15 @@ public class Patient {
      */
     public void setPrescriptions(ArrayList<Prescription> prescriptions) {
         this.prescriptions = prescriptions;
+    }
+    
+    public MedicalRecord searchMedicalID(int ID){
+        MedicalRecord medicalRecord = new MedicalRecord();
+        for (int i =0; i < Records.size();i++){
+            if(Records.get(i).getRecordID().equals(ID)){
+                medicalRecord = Records.get(i);
+            }
+        }
+        return medicalRecord;
     }
 }
