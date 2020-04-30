@@ -17,7 +17,7 @@ public class Test {
         try {
 //            int expectedValue = 0;
             AccessPrescriptionUIController test = new AccessPrescriptionUIController();
-            test.displayPrescriptions("000000");
+            //test.displayPrescriptions("000000");
             System.out.println("Passed: " + "displayPrescriptions" + " returned void");
             
         } catch (Exception e) {
