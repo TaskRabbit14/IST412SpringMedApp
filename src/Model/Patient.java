@@ -64,7 +64,11 @@ public class Patient {
         this.prescriptions = new ArrayList<Prescription>();
     }
     
-    public Patient(String firstName, String lastName, Date birthDate, String sex, String bloodType, String patientID, String SSN, String patientInsuranceNumber, String creditCard, String emergencyContactNumber, String phoneNumber, String email, ArrayList<MedicalRecord> Records, String relative, String address, String billingAddress, ArrayList<Prescription> prescriptions) {
+    public Patient(String firstName, String lastName, Date birthDate, String sex, 
+            String bloodType, String patientID, String SSN, String patientInsuranceNumber, 
+            String creditCard, String emergencyContactNumber, String phoneNumber,
+            String email, ArrayList<MedicalRecord> Records, String relative,
+            String address, String billingAddress, ArrayList<Prescription> prescriptions) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;

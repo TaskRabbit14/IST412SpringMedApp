@@ -18,6 +18,10 @@ public class PatientList
         ArrayList<MedicalRecord> janeRecords = new ArrayList<>();
         
         ArrayList<Prescription> janePrescriptions = new ArrayList<>();
+        ArrayList<String> medicineList = new ArrayList<>();
+        ArrayList<String> dosageList = new ArrayList<>();
+        
+        janePrescriptions.add(new Prescription("12/21/19", medicineList, dosageList , "1", "0", "1", "Notes here"));
         Patient p = new Patient("Jane", "Doe", (d), "F", "A", "0", "123513", "Insurance #", "CC", "Emergency Contacts", "Phone Number", "Email", janeRecords, "Relatives", "Address", "Billing Address", janePrescriptions);
         patientList.add(p);
 //        Patient p2 = new Patient("John", "Doe", (d), "M", "O", "1", "SSN", "Insurance #", "CC", "Emergency Contacts", "Phone Number", "Email", janeRecords, "Relatives", "Address", "Billing Address", janePrescriptions);
