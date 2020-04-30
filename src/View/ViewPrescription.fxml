@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewPrescriptionUIController">
-    
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewPrescriptionUIController">
+   <children>
+      <AnchorPane layoutX="186.0" layoutY="132.0" prefHeight="136.0" prefWidth="228.0" />
+      <Label fx:id="firstName" layoutX="22.0" layoutY="43.0" prefHeight="23.0" prefWidth="105.0" text="Prescription Name" />
+      <Label fx:id="lastName" layoutX="130.0" layoutY="46.0" prefHeight="23.0" prefWidth="85.0" text="Label" />
+      <Label fx:id="birthDateLabel" layoutX="22.0" layoutY="60" prefHeight="23.0" prefWidth="85.0" text="Dosage" />
+      <Label fx:id="birthDate" layoutX="130.0" layoutY="63.0" prefHeight="23.0" prefWidth="85.0" text="Label" />
+      <Label fx:id="sexLabel" layoutX="22.0" layoutY="77" prefHeight="23.0" prefWidth="85.0" text="Sex:" />
+      <Label fx:id="sex" layoutX="130.0" layoutY="80.0" prefHeight="23.0" prefWidth="85.0" text="Label" />
+      <Label fx:id="bloodTypeLabel" layoutX="22.0" layoutY="94" prefHeight="23.0" prefWidth="85.0" text="Blood Type:" />
+      <Label fx:id="bloodType" layoutX="130.0" layoutY="97.0" prefHeight="23.0" prefWidth="85.0" text="Label" />
+      <Label fx:id="patientIDLabel" layoutX="22.0" layoutY="111" prefHeight="23.0" prefWidth="85.0" text="Patient ID:" />
+      <Label fx:id="patientID" layoutX="130.0" layoutY="114.0" prefHeight="23.0" prefWidth="85.0" text="Label" />
+      <Label fx:id="SSNLabel" layoutX="22.0" layoutY="128" prefHeight="23.0" prefWidth="85.0" text="SSN:" />
+      <Label fx:id="SSN" layoutX="130.0" layoutY="131.0" prefHeight="23.0" prefWidth="85.0" text="Label" />
+     
+   </children>
 </AnchorPane>
