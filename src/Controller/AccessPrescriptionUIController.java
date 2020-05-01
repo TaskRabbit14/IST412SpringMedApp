@@ -94,9 +94,9 @@ public class AccessPrescriptionUIController implements Initializable{
             Patient p = patients.get(i);
             for(int j = 0; j < p.getPrescriptions().size(); j++)
             {
-                if(p.getPrescriptions().get(i).equals(prescriptionID.getText()))
+                if(p.getPrescriptions().get(j).equals(prescriptionID.getText()))
                 {
-                    getPrescription = p.getPrescriptions().get(i);
+                    getPrescription = p.getPrescriptions().get(j);
                     System.out.println("Found Prescription.");
                     break;
                 }
